@@ -44,6 +44,14 @@ def grab_col_names(dataframe, cat_th=10, car_th=20):
 #############################################
 
 def cat_summary(dataframe, col_name, plot=False):
+    '''
+    fonksiyon ne yapıyor, parametreler
+    :param dataframe:
+    :param col_name:
+    :param plot:
+    :return:
+    örnek bir uygulama herkesin fonk kullanımını anlamasını sağlayacak olan.
+    '''
     print(pd.DataFrame({col_name: dataframe[col_name].value_counts(),
                         "Ratio": 100 * dataframe[col_name].value_counts() / len(dataframe)}))
 
